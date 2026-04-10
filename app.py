@@ -38,11 +38,11 @@ agent = CodeAgent(
     description=SYSTEM_PROMPT
 )
 
-task = "Should I buy the Renpho 3 massage gun?"
-
-# 4. Run your first test
-print("--- Market Scout is investigating ---")
-result = agent.run(f"{SYSTEM_PROMPT}\n\nTask: {task}")
-
-print("\n--- FINAL REPORT ---")
-print(result)
+# task = "Should I buy the Renpho 3 massage gun?"
+#
+# # 4. Run your first test
+# print("--- Market Scout is investigating ---")
+# result = agent.run(f"{SYSTEM_PROMPT}\n\nTask: {task}")
+#
+# print("\n--- FINAL REPORT ---")
+# print(result)

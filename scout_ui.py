@@ -1,6 +1,7 @@
 import streamlit as st
-import os
-from smolagents import CodeAgent, DuckDuckGoSearchTool, LiteLLMModel, tool
+from smolagents import CodeAgent, DuckDuckGoSearchTool, LiteLLMModel
+
+from save_to_desktop import save_report_to_desktop
 from scraper import scrape_reddit_or_web
 
 # ... import your previous scrape_reddit_or_web tool here ...

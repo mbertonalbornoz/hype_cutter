@@ -44,20 +44,20 @@ def scrape_reddit_or_web(url: str) -> str:
 
 # --- Re-Initialize the Agent with the new tool ---
 
-model = LiteLLMModel(
-    model_id="ollama_chat/deepseek-r1:32b",
-    api_base="http://localhost:11434"
-)
-
-MARKET_SCOUT_PROMPT = """You are the Market Scout. Use search to find links, 
-then use the 'scrape_reddit_or_web' tool to read the actual discussions."""
-
-agent = CodeAgent(
-    tools=[DuckDuckGoSearchTool(), scrape_reddit_or_web],
-    model=model,
-    description=MARKET_SCOUT_PROMPT
-)
-
-# Test it out!
-agent.run(
-    "Is the Dyson Airwrap worth the price for someone with thin hair? Check Reddit for actual long-term durability.")
+# model = LiteLLMModel(
+#     model_id="ollama_chat/deepseek-r1:32b",
+#     api_base="http://localhost:11434"
+# )
+#
+# MARKET_SCOUT_PROMPT = """You are the Market Scout. Use search to find links,
+# then use the 'scrape_reddit_or_web' tool to read the actual discussions."""
+#
+# agent = CodeAgent(
+#     tools=[DuckDuckGoSearchTool(), scrape_reddit_or_web],
+#     model=model,
+#     description=MARKET_SCOUT_PROMPT
+# )
+#
+# # Test it out!
+# agent.run(
+#     "Is the Dyson Airwrap worth the price for someone with thin hair? Check Reddit for actual long-term durability.")
